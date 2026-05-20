@@ -1,0 +1,47 @@
+services:
+  - type: worker
+    name: MukeshRobot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 -m MukeshRobot
+    envVars:
+      - key: ENV
+        value: "True"
+      - key: TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: MONGO_DB_URI
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: EVENT_LOGS
+        sync: false
+      - key: SUPPORT_CHAT
+        sync: false
+      - key: START_IMG
+        sync: false
+      - key: CASH_API_KEY
+        sync: false
+      - key: TIME_API_KEY
+        sync: false
+      - key: DRAGONS
+        value: ""
+      - key: DEMONS
+        value: ""
+      - key: TIGERS
+        value: ""
+      - key: WOLVES
+        value: ""
+      - key: DEL_CMDS
+        value: "True"
+      - key: ALLOW_EXCL
+        value: "True"
+      - key: STRICT_GBAN
+        value: "True"
+      - key: WORKERS
+        value: "8"
