@@ -23,8 +23,6 @@ services:
         sync: false
       - key: SUPPORT_CHAT
         sync: false
-      - key: START_IMG
-        sync: false
       - key: CASH_API_KEY
         sync: false
       - key: TIME_API_KEY
